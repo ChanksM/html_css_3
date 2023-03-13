@@ -7,6 +7,7 @@ body {
     width: 1088px;
     margin: 0 auto;
 }
+
 /* global end */
 
 /* home start */
@@ -51,18 +52,82 @@ body {
     margin-top: 150px;
 }
 
-.header-titles > h1 {
+.header-titles>h1 {
     font-size: 62px;
     font-weight: 800;
     margin-bottom: 26px;
 
 }
 
-.header-titles > p {
+.header-titles>p {
     font-size: 14px;
 }
 
 /* home end */
+
+/* booking start */
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translate(-50%, calc(-50% - 27.8px));
+    position: absolute;
+    left: 50%;
+}
+
+.booking-arrows {
+    display: flex;
+}
+
+.booking-arrows>button {
+    border: none;
+    padding: 18px;
+    background-color: white;
+}
+
+.booking-arrows>button:hover {
+    background-color: #5863F8;
+}
+
+.booking-content {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    padding: 32px 100px 42px 92px;
+    box-shadow: 0px 38px 76px -51px rgba(125,125,125,0.75);
+    -webkit-box-shadow: 0px 38px 76px -51px rgba(125,125,125,0.75);
+    -moz-box-shadow: 0px 38px 76px -51px rgba(125,125,125,0.75);
+}
+
+.booking-input {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+.booking-input>label {
+    margin-bottom: 7px;
+    color: #5863F8;
+    font-size: 13px;
+}
+
+.booking-input>input {
+    background-color: #EEEEEE;
+    height: 50px;
+    border: none;
+    padding: 0 20px;
+}
+
+.booking-button {
+    background-color: #5863F8;
+    padding: 18px;
+    border: none;
+    margin-left: 18px;
+}
+
+/* booking end */
 
 /* s1 start */
 .home-s-1 {
@@ -78,33 +143,33 @@ body {
 }
 
 
-.home-s-1-texts > h4 {
+.home-s-1-texts>h4 {
     color: #5863F8;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.home-s-1-texts > h2 {
+.home-s-1-texts>h2 {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 14px;
 }
 
-.home-s-1-texts > p:first-of-type {
+.home-s-1-texts>p:first-of-type {
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
     margin-bottom: 20px;
 }
 
-.home-s-1-texts > p:last-of-type {
+.home-s-1-texts>p:last-of-type {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 20px;
 }
 
-.home-s-1-texts > button {
+.home-s-1-texts>button {
     padding: 15px 45px;
     border-radius: 8px;
     background-color: #5863F8;
@@ -112,9 +177,111 @@ body {
     border: none;
 }
 
-.home-s-1-images > div {
+.home-s-1-images>div {
     display: flex;
     gap: 16px;
     margin-bottom: 16px;
 }
+
 /* s1 end */
+
+/* s2 start */
+.home-s-2 {
+    padding: 90px 0;
+    background-image: url('../images/chris-lee.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.s2-wrapper {
+    width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titles {
+    margin-bottom: 20px;
+}
+
+.titles > h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5863F8;
+    position: relative;
+}
+
+.titles > h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    width: 400px;
+    line-height: 56px;
+}
+
+.slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.slider-card {
+    width: 260px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 26px 20px;
+    text-align: center;
+    min-width: 260px;
+
+}
+
+.slider-card-image  {
+    background-color: #5863F8;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.slider-arrow {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-arrow.left {
+    opacity: 0.3;
+
+}
+
+/* s2 end */
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
